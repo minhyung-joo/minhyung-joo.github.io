@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:dev": "webpack-dev-server",
+    "start": "webpack-dev-server",
     "dev": "webpack --mode development",
     "deploy": "node publish.js",
     "build": "webpack --mode production",

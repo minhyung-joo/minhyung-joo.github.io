@@ -6,6 +6,7 @@ import Button from "@material-ui/core/Button";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Header from "./Header";
 import NameCard from "./NameCard";
+import Post from "./Post";
 
 const Root = () => (
   <React.Fragment>
@@ -18,6 +19,7 @@ const Root = () => (
       `}
     >
       <NameCard />
+      <Post />
     </div>
     <h1>Building in progress!</h1>
     <h2>Built using React.js</h2>
