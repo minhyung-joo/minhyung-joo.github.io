@@ -5,8 +5,8 @@ import ReactDOM from "react-dom";
 import Button from "@material-ui/core/Button";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Header from "./Header";
-import NameCard from "./NameCard";
-import Post from "./Post";
+import ProfileSection from "./ProfileSection";
+import ExperienceSection from "./ExperienceSection";
 
 const Root = () => (
   <React.Fragment>
@@ -18,14 +18,9 @@ const Root = () => (
         flex-direction: column;
       `}
     >
-      <NameCard />
-      <Post />
+      <ProfileSection />
+      <ExperienceSection />
     </div>
-    <h1>Building in progress!</h1>
-    <h2>Built using React.js</h2>
-    <Button variant="contained" color="primary">
-      Surprise!
-    </Button>
   </React.Fragment>
 );
 

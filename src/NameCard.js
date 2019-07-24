@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
 import React from "react";
+const profile_picture = require("./images/profile_picture.jpg");
 
 const NameCard = () => (
   <div
@@ -8,9 +9,21 @@ const NameCard = () => (
       display: flex;
       flex-direction: column;
       align-items: center;
-      align-self: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 6px;
+      padding: 10px 20px;
     `}
   >
+    <img
+      css={css`
+        height: 200px;
+        width: 200px;
+        margin: 10px;
+      `}
+      src={profile_picture}
+      alt="Profile Picture"
+    />
     <h1 style={{ marginBottom: "5px" }}>Minhyung Joo</h1>
     <div
       css={css`

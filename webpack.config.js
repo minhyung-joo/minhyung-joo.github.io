@@ -19,6 +19,23 @@ module.exports = {
             options: { minimize: true }
           }
         ]
+      },
+      {
+        oneOf: [
+          {
+            test: /icons\/.*.\.svg$/,
+            use: ["@svgr/webpack"]
+          },
+
+          {
+            test: /\.(jpg|jpeg|png|gif|svg|eot|ttf|woff|woff2)$/i,
+            use: [
+              {
+                loader: "file-loader"
+              }
+            ]
+          }
+        ]
       }
     ]
   },
